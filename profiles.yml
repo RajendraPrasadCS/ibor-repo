@@ -19,15 +19,15 @@ deploy_dbt_ibor:
       client_session_keep_alive: False
     prod:
       type: snowflake
-      account: la46900.us-east-2.aws
+      account: at55608.central-india.azure
 
       # User/password auth
-      user: admin
-      password: Abc1234567890abc
+      user: dbt_dev1
+      password: doe
 
-      role: ACCOUNTADMIN
-      database: ANALYTICS
-      warehouse: TRANSFORMING
-      schema: prod_schema
+      role: dbt_developer
+      database: IBOR_DB
+      warehouse: dbt_wh
+      schema: ibor_prod_schema
       threads: 4
       client_session_keep_alive: False
